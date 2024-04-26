@@ -70,7 +70,7 @@ public class UvarintUtil {
         int shift = 0;
 
         while (true) {
-            byte b =in.getByte(in.readerIndex());
+            byte b =in.readByte();
             // 读取当前字节的低7位
             long byteValue = (b & 0x7FL);
 
